@@ -5,6 +5,12 @@
     <title>hello</title>
 </head>
 <body>
-    <div>my name is trang</div>
+    <form action="{{ url_for('scenario') }}" method="post">
+        URL :
+        <input name="url" type="text" style="height: 30px; width: 500px"><br>
+        SL :
+        <input name="target_like" type="text" style="height: 30px; width: 50px"><br>
+        <input name="btn" type="submit">
+    </form>
 </body>
 </html>
